@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	more_selectors.html
+- Description: 	Class Examples of CSS Selectors
+- Author: 		Luke Sathrum
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>CSCI 15 - CSS Selectors</title>
+		<style>
+			h1, h2, p{
+				color: #BEBEBE;
+			}
+			h2.heading{
+				color: #000000;
+			}
+			*[title]{
+				font-weight: bold;
+			}
+			p[title="clickable"]{
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 class="heading" title="Web Dev">Web Development</h1>
+		</header>
+		<section>
+			<h2 class="heading">HTML 5</h2>
+			<p title="clickable">HTML5 is a new version of HTML that has not fully been implemented. Most features have been implemented and all major borwsers now support it.</p>
+			<h2>Javascript</h2>
+			<p title="js">Javascript&trade; is another topic related to Web Development</p>
+		</section>
+		<footer>
+			<p id="copyright">&copy; Luke Sathrum</p>
+		</footer>
+	</body>
+</html>
