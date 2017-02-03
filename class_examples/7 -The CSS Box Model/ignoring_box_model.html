@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	ignoring_box_model
+- Description: 	Class Example of how to ignore the CSS Box Model
+- Author: 		Luke Sathrum
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Ignoring the Box Model</title>
+		<style>
+			.simple {
+				width: 500px;
+				margin: 20px auto;
+			}
+			.fancy {
+				width: 500px;
+				margin: 20px auto;
+				padding: 50px;
+				border-width: 10px;
+				border-color: #0000FF;
+				border-style: dashed;
+			}
+			.outside_simple_box {
+				border: 10px solid #000000;
+				width: 500px;
+				margin: 0 auto;
+			}
+			.outside_fancy_box {
+				border: 10px solid #000000;
+				width: 620px;
+				margin: 0 auto;
+			}
+			.no_simple {
+				width: 500px;
+				margin: 20px auto;
+				box-sizing: border-box;
+			}
+			.no_fancy {
+				width: 500px;
+				margin: 20px auto;
+				padding: 50px;
+				border-width: 10px;
+				border-color: #0000FF;
+				border-style: dashed;
+				box-sizing: border-box;
+			}
+			.outside_no_simple_box ,
+			.outside_no_fancy_box {
+				border: 10px solid #000000;
+				width: 500px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="outside_simple_box">
+			<section class="simple">
+				<p>I'm a simple box</p>
+			</section>
+		</div>
+		<br /><br /><br />
+		<div class="outside_fancy_box">
+			<section class="fancy">
+				<p>I'm a fancy box</p>
+			</section>
+		</div>
+		<br /><br /><br />
+		<div class="outside_no_simple_box">
+			<section class="no_simple">
+				<p>I'm a simple box that doesn't follow the box model!</p>
+			</section>
+		</div>
+		<br /><br /><br />
+		<div class="outside_no_fancy_box">
+			<section class="no_fancy">
+				<p>I'm a fancy box that doesn't follow the box model!</p>
+			</section>
+		</div>
+	</body>
+</html>

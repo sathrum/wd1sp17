@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	padding.html
+- Description: 	Class Examples of CSS Padding Properties
+- Author: 		Luke Sathrum
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Padding</title>
+		<style>
+			section{
+				background: #BEBEBE;
+				border: 1px dashed #000000;
+				padding: 3em;	/* All Four Sides */
+			}
+			p{
+				background: #FFFFFF;
+			}
+			p:first-child{
+				background: none;
+			}
+			#one{
+				padding: 0 2em;	/* Top/Bottom 0, Right/Left 2em */
+			}
+			#two{
+				padding: 0 2em 3em; /* Top 0, Right/Left 2em, Bottom 3em */
+			}
+			#three{
+				padding: 1em 2em 3em 4em; /* Top 1em, Right 2em, Bottom 3em, Left 4em */
+			}
+			#four{
+				padding-bottom: 5em;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<p>This section has 3em padding on all sides.</p>
+			<p id="one">This paragraph has a top/bottom padding of 0 and a left/right padding of 2em;</p>
+			<p id="two">This paragraph has a top padding of 0, a left/right padding of 2em, and a bottom padding of 3em</p>
+			<p id="three">This paragraph has a top padding of 1em, a right padding of 2em, a bottom padding of 3em and a left padding of 4em</p>
+			<p id="four">The padding bottom is 5em.</p>
+		</section>
+	</body>
+</html>

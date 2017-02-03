@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	margin_padding.html
+- Description: 	Class Examples of CSS Margin and Padding Properties
+- Author: 		Luke Sathrum
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Margins and Padding</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			section {
+				background: #BEBEBE;
+				border: 1px dashed #000000;
+				padding: 2em;	/* All Four Sides */
+				margin: 1em;
+			}
+			p {
+				background: #FFFFFF;
+			}
+			p:first-child {
+				background: none;
+			}
+			#one {
+				margin-bottom: 3em;
+			}
+			#two {
+				margin-top: 3em;
+				padding-bottom: 3em;
+			}
+			#three {
+				padding-top: 3em;
+			}
+			#centered {
+				/* Change to max-width to get rid of horizontal scrollbar */
+				width: 300px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<p>This section has 1em margins and 2em padding on all sides.</p>
+			<p id="one">This paragraph has a bottom margin of 3em.</p>
+			<p id="two">This paragraph has a top margin of 3em. Notice the space between this and the one above is 3em, not 6em.<br>
+						Also the bottom margin is 3em.</p>
+			<p id="three">This paragraph has a top padding of 3em. Notice the space between is 6em.</p>
+		</section>
+		<section id="centered">
+			<p>This section is centered!</p>
+		</section>
+		
+	</body>
+</html>

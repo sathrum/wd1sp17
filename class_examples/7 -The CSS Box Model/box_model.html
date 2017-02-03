@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	box_model.html
+- Description: 	Class Examples of CSS Box Model
+- Author: 		Luke Sathrum
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>The CSS Box Model</title>
+		<style>
+			body{
+				border: 3px dotted #000000;
+			}
+			section{
+				border: 2px solid #000000;
+				width: 500px;
+				margin: 20px;	/* All Four Sides */
+				padding: 10px;	/* All Four Sides */
+			}
+			h1,
+			p{
+				border: 1px dashed #000000;
+			}
+			h1{
+				margin: .5em 0 .25em;	/* .5em top, 0 right and left, .25em bottom */
+				padding-left: 15px;
+			}
+			p{
+				margin: 0;	/* All Four Sides */
+				padding-left: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>CSS Box Model</h1>
+			<p>This is an example of the CSS Box Model.
+			   All block elements get put in a box.</p>
+		</section>
+	</body>
+</html>

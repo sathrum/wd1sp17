@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	floats.html
+- Description: 	Class Examples of CSS Float Properties
+- Author: 		Luke Sathrum
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Floats</title>
+		<style>
+			.left {
+				float: left;
+				margin-right: 10px;
+			}
+			.right {
+				float: right;
+			}
+			.clear {
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<p class="left">Floated Left</p>
+			<p class="right">Floated Right</p>
+			<p>No Float, <br>
+						  Should be wrapping around<br>
+						  the left float</p>
+		</section>
+		<section>
+			<p class="left">Floated Left</p>
+			<p>This wraps</p>
+			<p class="clear">This clears to float<p>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	borders.html
+- Description: 	Class Examples of CSS Borders
+- Author: 		Luke Sathrum
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Borders</title>
+		<style>
+			section {
+				width: 50%;
+				padding: 1em;
+				border: 1px dashed #000000;
+			}
+			article {
+				border-left: 3px double #000000;
+				padding-left: 1em;
+			}
+			article:hover {
+				border-left-color: #FF0000;
+				border-left-width: 6px;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<p>This section has a black dashed border</p>
+			<article>
+				<p>This article has a left double border, changes on hover.</p>
+			</article>
+		</section>
+	</body>
+</html>

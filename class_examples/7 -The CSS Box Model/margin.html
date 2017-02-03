@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	margin.html
+- Description: 	Class Examples of CSS Margin Properties
+- Author: 		Luke Sathrum
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Margin</title>
+		<style>
+			section{
+				background: #BEBEBE;
+				border: 1px dashed #000000;
+				margin: 3em;	/* All Four Sides */
+			}
+			p{
+				background: #FFFFFF;
+			}
+			p:first-child{
+				background: none;
+			}
+			#one{
+				margin: 0 2em;	/* Top/Bottom 0, Right/Left 2em */
+			}
+			#two{
+				margin: 0 2em 3em; /* Top 0, Right/Left 2em, Bottom 3em */
+			}
+			#three{
+				margin: 1em 2em 3em 4em; /* Top 1em, Right 2em, Bottom 3em, Left 4em */
+			}
+			#four{
+				margin-bottom: 5em;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<p>This section has 3em margin on all sides.</p>
+			<p id="one">This paragraph has a top/bottom margin of 0 and a left/right margin of 2em;</p>
+			<p id="two">This paragraph has a top margin of 0, a left/right margin of 2em, and a bottom margin of 3em</p>
+			<p id="three">This paragraph has a top margin of 1em, a right margin of 2em, a bottom margin of 3em and a left margin of 4em</p>
+			<p id="four">The margin bottom is 5em.</p>
+		</section>
+	</body>
+</html>

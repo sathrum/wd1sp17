@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	2_col_flex.html
+- Description: 	Class Example of Two Column Flex Layout w/ Responsive Design via Media Queries
+- Author: 		Luke Sathrum
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Two Column Fixed Layout</title>
+		<style>
+			.container {
+				display: flex;
+				min-height: 97vh;
+				flex-flow: row wrap;
+			}
+			.container > * {
+				flex: 1 100%;
+			}
+
+			/* Responsive */
+			@media (min-width: 768px) {
+			  .container section {
+			  	flex: 2 0px;
+			  }
+			  .container aside {
+			  	flex: 1 auto;
+			  }
+			}
+
+			/* Just so we can see everything */
+			header {
+				background: tomato;
+			}
+			section {
+				background: deepskyblue;
+				padding: 1em;
+			}
+			aside {
+				background: gold;
+			}
+			footer {
+				background: lightgreen;
+			}
+		</style>
+	</head>
+	<body class="container">
+		<header>
+			Header Content
+		</header>
+		<section>
+			<h1>Section Content</h1>
+		</section>
+		<aside>
+			<p>Aside Content</p>
+		</aside>
+		<footer>
+			Footer Content
+		</footer>
+	</body>
+</html>

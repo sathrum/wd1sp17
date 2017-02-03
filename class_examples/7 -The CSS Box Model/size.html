@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<!--
+- Filename: 	size.html
+- Description: 	Class Examples of CSS Size Properties
+- Author: 		Luke Sathrum
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Size</title>
+		<style>
+			section{
+				height: 300px;
+				width: 75%;
+				background: #BEBEBE;
+				border: 1px dashed #000000;
+			}
+			article p:first-child{
+				width: 75%;
+				max-width: 400px;
+				background: #FFFFFF;
+			}
+			#short{
+				width: 75%;
+				min-width: 300px;
+				background: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<p>This section has a width of 500px and a height of 300px. Background is grey.</p>
+			<article>
+				<p>This article has a max-width of 400px and width of 75%.</p>
+				<p id="short">Minium width of 300px and width of 75%.</p>
+			</article>
+		</section>
+	</body>
+</html>

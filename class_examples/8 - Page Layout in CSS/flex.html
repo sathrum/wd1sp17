@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+- Filename:     flex.html
+- Description: 	Class Example of using CSS3's FlexBox
+- Author:       Luke Sathrum
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Flexbox</title>
+    <link rel="stylesheet" href="../../helpers/prism.css">
+    <style>
+/* For Structure */
+.flex-example {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-example div {
+  flex: 1 100%;
+  margin: 0 1em;
+}
+
+/* For Examples */
+.parent {
+  display: flex;
+  height: 300px;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  color: white;
+  background: black;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+
+<h2>Simple Example</h2>
+<div class="flex-example">
+  <div>
+    <h3>HTML</h3>
+    <pre><code class="language-html">&lt;div class="parent">
+  &lt;p class="child">One&lt;/p>
+  &lt;p class="child">Two&lt;/p>
+&lt;/div></code></pre>
+  </div>
+  <div>
+    <h3>CSS</h3>
+    <pre><code class="language-css">.parent {
+  display: flex;
+  height: 300px;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}</code></pre>
+  </div>
+</div>
+<h3>Output:</h3>
+<div class="parent">
+  <p class="child">One</p>
+  <p class="child">Two</p>
+</div>
+
+<h2>More Boxes!</h2>
+<div class="flex-example">
+  <div>
+    <h3>HTML</h3>
+    <pre><code class="language-html">&#x3C;ul class=&#x22;flex-container&#x22;&#x3E;
+  &#x3C;li class=&#x22;flex-item&#x22;&#x3E;1&#x3C;/li&#x3E;
+  &#x3C;li class=&#x22;flex-item&#x22;&#x3E;2&#x3C;/li&#x3E;
+  &#x3C;li class=&#x22;flex-item&#x22;&#x3E;3&#x3C;/li&#x3E;
+  &#x3C;li class=&#x22;flex-item&#x22;&#x3E;4&#x3C;/li&#x3E;
+  &#x3C;li class=&#x22;flex-item&#x22;&#x3E;5&#x3C;/li&#x3E;
+  &#x3C;li class=&#x22;flex-item&#x22;&#x3E;6&#x3C;/li&#x3E;
+&#x3C;/ul&#x3C;/div></code></pre>
+  </div>
+  <div>
+    <h3>CSS</h3>
+    <pre><code class="language-css">.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}</code></pre>
+  </div>
+</div>
+<h3>Output:</h3>
+<ul class="flex-container">
+  <li class="flex-item">1</li>
+  <li class="flex-item">2</li>
+  <li class="flex-item">3</li>
+  <li class="flex-item">4</li>
+  <li class="flex-item">5</li>
+  <li class="flex-item">6</li>
+</ul>
+
+
+
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <script src="../../helpers/prism.js"></script>
+  </body>
+</html>
