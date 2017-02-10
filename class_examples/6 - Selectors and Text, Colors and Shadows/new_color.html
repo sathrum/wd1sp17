@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	new_color.html
+- Description: 	Class Examples of CSS3 Colors
+- Author: 		Luke Sathrum
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>CSCI 15 - CSS Selectors</title>
+		<style>
+			*{
+				font-family:Arial,Helvetica,sans-serif;
+			}
+			header{
+				padding-bottom: .75em;
+				border-bottom: 3px solid black;
+				margin-bottom: 0;
+			}
+			h1{
+				background: rgba(50%, 50%, 50%, 0.5);
+				color: hsl(120, 100%, 25%);
+			}
+			h2{
+				background: rgb(50%, 50%, 50%);
+				color: hsla(120, 100%, 25%, 0.1)
+			}
+		</style>
+	</head>
+	<body>
+		<header id="head">
+			<h1 class="heading">Web Development</h1>
+		</header>
+		<section>
+			<h2 class="heading">HTML 5</h2>
+			<p>HTML5 is a new version of HTML that has not fully been implemented. Most features have been implemented and all major borwsers now support it.</p>
+			<h2 class="heading">Javascript</h2>
+			<p>Javascript&trade; is another topic related to Web Development</p>
+		</section>
+		<footer>
+			<p id="copyright">&copy; Luke Sathrum</p>
+		</footer>
+	</body>
+</html>

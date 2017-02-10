@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	relational_selectors.html
+- Description: 	Class Examples of CSS Relational Selectors
+- Author: 		Luke Sathrum
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>CSCI 15 - CSS Relational Selectors</title>
+		<style>
+			article p{
+				margin-left: 2em;
+			}
+			/* Adjacent Sibling */
+			h4+p{
+				font-weight: bold;
+			}
+			/* Child */
+			.two>p{
+				color: #FF0000; /* Red */
+			}
+			/* General Sibling */
+			h4~p{
+				background: #CCCCCC;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Web Development</h1>
+		</header>
+		<section>
+			<h2>HTML 5</h2>
+			<p>HTML5 is newest form of HTML.</p>
+			<article>
+				<p>Notice this adjacent sibling does not get the bold styling or background</p>
+				<h4>Article Title</h4>
+				<p>This is the first paragraph of our article.</p>
+				<p>This is the second paragraph of our article.</p>
+			</article>
+			<article class="two">
+				<h4>2nd Article Title</h4>
+				<p>This is the first paragraph of our second article.</p>
+				<p>This is the second paragraph of our second article.</p>
+				<ul>
+					<li><p>This is a level down so paragraph child style does not apply.</p></li>
+				</ul>
+			</article>
+		</section>
+		<footer>
+			<p id="copyright">&copy; Luke Sathrum</p>
+		</footer>
+	</body>
+</html>

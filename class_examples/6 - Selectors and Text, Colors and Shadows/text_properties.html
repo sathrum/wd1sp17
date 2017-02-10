@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	text_properties.html
+- Description: 	Class Examples of CSS Text Properties
+- Author: 		Luke Sathrum
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>CSCI 15 - CSS Text Properties</title>
+		<style>
+			body{
+				font-family: Helvetica, Arial, sans-serif;
+				font-size: 80%;
+			}
+			h2{
+				font-style: italic;
+			}
+			h2+p{
+				font-weight: bold;
+				text-indent: 2em;
+				text-decoration: overline;
+				text-transform: uppercase;
+			}
+			article h4{
+				font-variant: small-caps
+			}
+			q{
+				vertical-align: text-bottom;
+			}
+			p{
+				line-height: 200%;
+			}
+			ul p{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Web Development</h1>
+		</header>
+		<section>
+			<h2>HTML 5</h2>
+			<p>HTML5 is newest form of HTML.<br>
+			   Second Line</p>
+			<article>
+				<p>A quote follows: <q>A Quote</q></p>
+				<h4>Article Title</h4>
+				<p>This is the first paragraph of our article.</p>
+				<p>This is the second paragraph of our article.</p>
+			</article>
+			<article class="two">
+				<h4>2nd Article Title</h4>
+				<p>This is the first paragraph of our second article.</p>
+				<p>This is the second paragraph of our second article.</p>
+				<ul>
+					<li><p>This is a level down so paragraph child style does not apply.</p></li>
+				</ul>
+			</article>
+		</section>
+		<footer>
+			<p id="copyright">&copy; Luke Sathrum</p>
+		</footer>
+	</body>
+</html>

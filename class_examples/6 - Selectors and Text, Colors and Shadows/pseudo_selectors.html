@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	pseudo_selectors.html
+- Description: 	Class Examples of CSS Pseudo Selectors
+- Author: 		Luke Sathrum
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>CSCI 15 - CSS Pseudo Selectors</title>
+		<style>
+			/* Non-Visited Link */
+			a:link{
+				color: #FF0000;
+			}
+			/* Visited Link */
+			a:visited{
+				color: #228B22;
+			}
+			/* Click but not released */
+			a:active{
+				font-weight: bold;
+			}
+			/* Hovering or Focus */
+			a:hover,
+			a:focus{
+				color: #1E90FF;
+			}
+			/* The first child of an element */
+			ul li:first-child{
+				list-style-type: square;
+			}
+			/* The last child of an element */
+			ul li:last-child{
+				list-style-type: circle;
+			}
+			/* The only child of an element */
+			ul li:only-child{
+				list-style-type: lower-roman;
+			}
+			/* The first letter of an element */
+			ul li:first-letter{
+				font-size: 200%;
+				font-weight: bold;
+			}
+			/* The first line of an element */
+			p:first-line{
+				font-size: 125%;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Web Development</h1>
+		</header>
+		<section>
+			<h2>HTML 5</h2>
+			<p>HTML5 is newest form of HTML.<br />
+			   This is the second Line</p>
+			<h4>Links</h4>
+			<ul>
+				<li><a class="one" href="#">Link 1</a></li>
+				<li><a class="two" href="#">Link 2</a></li>
+				<li><a class="three" href="#">Link 3</a></li>
+				<li><a class="four" href="http://www.google.com">Google</a></li>
+			</ul>
+			<ul>
+				<li><a class="one" href="#">Only 1 Link</a></li>
+			</ul>
+		</section>
+		<footer>
+			<p id="copyright">&copy; Luke Sathrum</p>
+		</footer>
+	</body>
+</html>

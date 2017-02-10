@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	specificity.html
+- Description: 	Class Examples of CSS Cascading
+- Author: 		Luke Sathrum
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>CSCI 15 - CSS Specificity Selectors</title>
+		<style>
+			p{
+				font-weight: normal !important;
+			}
+			p{
+				font-weight: bold;
+				color: #00AA22;
+			}
+			article p{
+				color: #000000;
+			}
+			footer p{
+				color: #0000FF;
+			}
+			#copyright{
+				color: #FF0000;
+			}			
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Web Development</h1>
+		</header>
+		<section>
+			<h2>HTML 5</h2>
+			<p>HTML5 is newest form of HTML.</p>
+			<article>
+				<h4>Article Title</h4>
+				<p>This is the first paragraph of our article.</p>
+				<p>This is the second paragraph of our article.</p>
+			</article>
+			<article class="two">
+				<h4>2nd Article Title</h4>
+				<p>This is the first paragraph of our second article.</p>
+				<p>This is the second paragraph of our second article.</p>
+				<ul>
+					<li><p>This is a level down so paragraph child style does not apply.</p></li>
+				</ul>
+			</article>
+		</section>
+		<footer>
+			<p id="copyright">&copy; Luke Sathrum</p>
+		</footer>
+	</body>
+</html>

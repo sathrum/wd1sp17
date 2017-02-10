@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	float.html
+- Description: 	Class Examples of CSS Floats
+- Author: 		Luke Sathrum
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CSCI 15 - CSS Floats</title>
+		<style>
+			.two{
+				float: left;
+			}
+			.three{
+				float: left;
+				margin-right: 2em;
+			}
+			.clear{
+				clear: left;
+			}
+		</style>
+	</head>
+	<body>
+		<img class="one" src="http://www.google.com/images/srpr/logo3w.png" alt="Google Logo">
+		<p>Normal Text</p>
+		<img class="two" src="http://www.google.com/images/srpr/logo3w.png" alt="Google Logo">
+		<p>Floated, no margin</p>
+		<div class="clear"></div>
+		<img class="three" src="http://www.google.com/images/srpr/logo3w.png" alt="Google Logo">
+		<p>Floated, w/ margin</p>
+	</body>
+</html>
