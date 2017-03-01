@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	  fill_in_the_blank.html
+- Description: 	First Example of JavaScript
+- Author: 		  Luke Sathrum
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Missing Word</title>
+		<style>
+			/* Background Image */
+			body {
+			  background: #000000 url('bg.jpg') repeat top left;
+			}
+			/* Background Colors */
+			section {
+			  background-color: #BEBEBE;
+			  padding: 2em;
+			  width: 80%;
+			  margin: 0 auto;
+			}
+			h1 {
+			  background-color: #00858B;
+			  padding: 1em;
+			  color: #FFFFFF;
+			}
+			h3 {
+			  background: #EE3E80;
+			  padding: 1em;
+			  color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>Missing Word - TV Shows - Missing Word Starts with M</h1>
+			<h3>Your Answers</h3>
+			<script>
+				// Get the answers
+				var q_one = prompt("How I _____ Your Mother");
+				var q_two = prompt("Criminal _______");
+				var q_three = prompt("________: Impossible");
+				var q_four = prompt("__________ Ed");
+				var q_five = prompt("Family _________");
+	
+				// Display the answers
+				document.write("<ol>");
+				document.write("<li>How I <u>" + q_one + "</u> Your Mother</li>");
+				document.write("<li>Criminal <u>" + q_two + "</u></li>");
+				document.write("<li><u>" + q_three + "</u>: Impossible</li>");
+				document.write("<li><u>" + q_four + "</u> Ed</li>");
+				document.write("<li>Family <u>" + q_five + "</u></li>");
+				document.write("</ol>");
+			</script>
+			<h3>Actual Answers</h3>
+			<ol>
+				<li>How I <u>Met</u> Your Mother</li>
+				<li>Criminal <u>Minds</u></li>
+				<li><u>Mission</u>: Impossible</li>
+				<li><u>Mister</u> Ed</li>
+				<li>Family <u>Matters / Feud</u></li>
+			</ol>
+		</section>
+	</body>
+</html>

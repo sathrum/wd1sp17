@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+- Filename:		datalist.html
+- Description:	Example of an HTML5 <datalist>
+- Author:		Luke Sathrum	
+-->
+<html lang="en">
+
+<head>
+    <title>Form Example - Forms and CSS</title>
+    <meta charset="utf-8">
+    <style>
+        #one label {
+            float: left;
+            width: 7em;
+            text-align: right;
+        }
+        #one input {
+            margin-left: 1em;
+            margin-bottom: .5em;
+        }
+        #one input:focus {
+            border: 2px solid #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get" action="process_form.html">
+        <label for="toppings">Toppings:</label>
+        <!-- Example of <datalist> Works in Firefox, Opera, and Chrome and IE 10+ -->
+        <input name="toppings" id="toppings" list="avail_toppings">
+        <datalist id="avail_toppings">
+            <option value="Pepperoni" label="P" />
+            <option value="Sausage" />
+            <option value="Mushrooms" />
+            <option value="Olives" />
+            <option value="Onions" />
+            <option value="Bacon" label="B" />
+            <option value="Pineapple" />
+        </datalist>
+        <br />
+        <input type="submit" value="Place Order" name="submit">
+    </form>
+</body>
+
+</html>

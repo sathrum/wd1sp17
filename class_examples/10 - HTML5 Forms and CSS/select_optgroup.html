@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+- Filename:		select_optgroup.html
+- Description:	Example of using <select> <optgroup>
+- Author:		Luke Sathrum	
+-->
+<html lang="en">
+	<head>
+		<title>Form Example - Select</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form method="get" action="process_form.html">
+			<!-- Select Element w/ optgroup -->
+			<label>Pizza Style and Size</label>
+			<select name="pizza_style_size">
+				<optgroup label="New York">
+					<option value="ny10">10"</option>
+					<option value="ny12">12"</option>
+					<option value="ny14">14"</option>
+				</optgroup>
+				<optgroup label="Chicago">
+					<option value="chi10">10"</option>
+					<option value="chi12">12"</option>
+					<option value="chi14">14"</option>
+				</optgroup>
+			</select>
+			<br>
+			<!-- Select Element w/ multiple select -->
+			<label>Choose Multiple Toppings</label><br>
+			<select name="toppings" size="4" multiple="multiple">
+				<option value="pepp">Pepperoni</option>
+				<option value="saus">Sausage</option>
+				<option value="mush">Mushrooms</option>
+				<option value="oliv">Olives</option>
+				<option value="onio">Onions</option>
+				<option value="bacn">Bacon</option>
+				<option value="pine">Pineapple</option>
+			</select>
+			<br />
+			<input type="submit" value="Submit" name="submit" />
+		</form>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+- Filename:		table_psudeo_css.html
+- Description:	Class Example of HTML tables and CSS psuedo classes
+- Author:		Luke Sathrum
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>HTML Tables and CSS Pseudo-Classes</title>
+		<style>
+			table {
+				border-collapse: collapse;	
+			}
+			th,
+			td {
+				padding: .25em .5em;
+				border: 1px solid #000000;
+			}
+			th:first-child {
+				text-align: left;
+			}
+			tbody tr:nth-child(even) {
+				background: #EBEBEB;
+			}
+			thead {
+				border-bottom: 3px solid #000000;
+				background: #BEBEBE;
+			}
+			tfoot {
+				border-top: 3px solid #000000;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>Book</th>
+					<th>Year Published</th>
+					<th>Sales</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>PHP and MySQL</td>
+					<td>2010</td>
+					<td>$372,381</td>
+				</tr>
+				<tr>
+					<td>JavaScript and DOM Scripting</td>
+					<td>2009</td>
+					<td>$305,447</td>
+				</tr>
+				<tr>
+					<td>Java Programming</td>
+					<td>2011</td>
+					<td>$392,444</td>
+				</tr>
+				<tr>
+					<td>Java Servlets and JSP</td>
+					<td>2008</td>
+					<td>$328,992</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th colspan="2">Total Sales</th>
+					<td>$2,154,786</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>

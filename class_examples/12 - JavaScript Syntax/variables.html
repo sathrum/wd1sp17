@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	variables.html
+- Description: 	Examples of JavaScript Variables
+- Author: 		Luke Sathrum
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Variables</title>
+    <style>
+        /* Background Image */
+        body {
+            background: #000000 url('bg.jpg') repeat top left;
+        }
+        /* Background Colors */
+        section {
+            background-color: #BEBEBE;
+            padding: 2em;
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1 {
+            background-color: #00858B;
+            padding: 1em;
+            color: #FFFFFF;
+        }
+        h3 {
+            /* Note you can leave off the -color */
+            background: #EE3E80;
+            padding: 1em;
+            color: #FFFFFF;
+        }
+        p {
+            /* Note you can leave off the -color */
+            background-color: #FFFFFF;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Using JavaScript Variables</h1>
+        <script>
+            "use strict";
+             // Creating variables
+            var firstName = 'Peter';
+            var lastName = 'Parker';
+            var age = 22;
+            var isSuperHero = true;
+             // Can declare multiple variables at once
+            var isAfraidOfHeights = false,
+                isBadAss = true;
+            document.write('<p>' + firstName + '</p>');
+            document.write('<p>' + lastName + '</p>');
+            document.write('<p>' + age + '</p>');
+            document.write('<p>' + isSuperHero + '</p>');
+        </script>
+    </section>
+</body>
+
+</html>

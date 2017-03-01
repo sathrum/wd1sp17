@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+- Filename:		lists_css.html
+- Description:	Creating Menus with Lists and CSS
+- Author:		Luke Sathrum
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Menus With Lists</title>
+		<style>
+			ul {
+				list-style-type: none;
+				padding: 0;
+				
+			}
+			ul a {
+				display: block;
+				text-decoration: none;
+				color: #000000;
+				padding: .25em .5em;
+				background: #BEBEBE;
+			}
+			ul a:hover {
+				background: #000000;
+				color: #FFFFFF;
+			}
+			#vertical {
+				width: 5em;
+			}
+			#horizontal li {
+				display: inline;
+			}
+			#horizontal a {
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<nav id="horizontal">
+			<ul>
+				<li><a href="#1">Home</a></li>
+				<li><a href="#2">Menu</a></li>
+				<li><a href="#3">Directions</a></li>
+				<li><a href="#4">Contact</a></li>
+			</ul>
+		</nav>
+		<br /><br />
+		<nav id="vertical">
+			<ul>
+				<li><a href="#1">Home</a></li>
+				<li><a href="#2">Menu</a></li>
+				<li><a href="#3">Directions</a></li>
+				<li><a href="#4">Contact</a></li>
+			</ul>
+		</nav>
+	</body>
+</html>

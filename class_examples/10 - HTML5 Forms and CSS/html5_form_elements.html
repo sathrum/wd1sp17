@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+- Filename:		html5_form_elements.html
+- Description:	Using New Form Elements and Attributes w/ Validation
+- Author:		Luke Sathrum	
+-->
+<html lang="en">
+	<head>
+		<title>Form Example - Forms and CSS</title>
+		<meta charset="utf-8">
+		<style>
+			#one label{
+				float: left;
+				width: 7em;
+				text-align: right;
+			}
+			#one input{
+				margin-left: 1em;
+				margin-bottom: .5em;
+			}
+			#one input:focus{
+				border: 2px solid #000000;
+			}
+		</style>
+	</head>
+	<body>
+		<form method="get" action="process_form.html">
+			<fieldset id="one">
+				<legend>Contact Information</legend>
+				<label for="f-name">First Name:</label>
+				<input type="text" name="f-name" id="f-name" /><br />
+				<label for="l-name">Last Name:</label>
+				<input type="text" name="l-name" id="l-name" /><br />
+				<!-- tel input type -->
+				<label for="phone">Phone Number:</label>
+				<input type="tel" 
+                       name="phone"
+                       id="phone"
+                       placeholder="###-###-####"
+                       pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                       required="required"
+					   title="The phone number must be in the following format: 999-999-9999"/><br />
+				<!-- email input type -->
+				<label for="phone">Email:</label>
+				<input type="email" name="email" id="email" required="required" /><br />
+			</fieldset>
+			
+			<fieldset id="two">
+				<legend>Order</legend>
+				<label for="size">Size:</label>
+				<input name="size" id="size" list="sizes" />
+				<datalist id="sizes">
+					<option value='10"' label="10" />
+					<option value='12"' label="12" />
+					<option value='14"' label="14" />
+					<option value='16"' label="16" />
+					<option value='18"' label="18" />
+				</datalist><br>
+				<!-- Eample of number input type -->
+				<label for="quantity">Quantity:</label>
+				<input type="number"
+					   name="quantity"
+					   id="quantity"
+					   required="required"
+					   value="1"
+					   min="1"
+					   max="10"
+				 /><br />
+				<label>Choose Toppings</label><br />
+				<select name="toppings" size="4" multiple="multiple">
+					<option value="pepp">Pepperoni</option>
+					<option value="saus">Sausage</option>
+					<option value="mush">Mushrooms</option>
+					<option value="oliv">Olives</option>
+					<option value="onio">Onions</option>
+					<option value="bacn">Bacon</option>
+					<option value="pine">Pineapple</option>
+				</select>
+			</fieldset>
+			<input type="submit" value="Place Order" name="submit" />
+			<input type="submit" value="Place Order No Validation" name="submit-no-valid" formnovalidate="FORMNOVALIDATE"/>
+		</form>
+	</body>
+</html>

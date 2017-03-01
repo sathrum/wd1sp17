@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+- Filename:		additional_form_attrobites.html
+- Description:	Example of additional attribtues for form elements
+- Author:		Luke Sathrum	
+-->
+<html lang="en">
+	<head>
+		<title>Form Example - Input</title>
+		<meta charset="utf-8">
+		<style>
+            body {
+                font-family: "Courier New", courier;
+            }
+        </style>
+	</head>
+	<body>
+		<form method="get" action="process_form.html">
+			<!-- disabled attribute -->
+			<label for="name-f">First Name: &nbsp;</label><input type="text" name="name-f" id="name-f" value="Luke" disabled="disabled" /><br />
+			<!-- autofocus attribute -->
+			<label for="name-m">Middle Name: </label><input type="text" name="name-m" id="name-m" /><br />
+			<!-- readonly attribute -->
+			<label for="name-l">Last Name: &nbsp;&nbsp;</label><input type="text" name="name-l" id="name-l" value="Sathrum" readonly="readonly" /><br />
+			<!-- placeholder attribute -->
+			<label for="phone">Phone Number:</label><input type="text" name="phone" id="phone" autofocus="autofocus" placeholder="###-###-####" /><br />
+			<p>Favorite Color(s)?</p>
+			<!-- disabled attribute on checkbox -->
+			<input type="checkbox" name="color" value="blue" id="blue" disabled="disabled" /><label>Blue</label>
+			<input type="checkbox" name="color" value="green" id="green" checked="checked" /><label>Green</label>
+			<input type="checkbox" name="color" value="other" id="other" /><label>Other</label>
+			<input type="submit" value="Submit" name="submit" />
+		</form>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+- Filename:		form.html
+- Description:	Class Example of an HTML form
+- Author:		Luke Sathrum
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>HTML Forms</title>
+		<style>
+	      body {
+	        font-family: "Courier New", courier;
+	      }
+	    </style>
+	</head>
+	<body>
+		<form action="process_form.html" method="get" id="login-form">
+			Username: <input name="un" type="text" value="lukeatbutte" /><br />
+			Password: <input name="pw" type="password" maxlength="10" /><br />
+			Comments: <textarea name="comments" cols="15">DEFAULT TEXT</textarea><br />
+			<input type="reset" value="Reset" />
+			<input type="submit" value="Login" />
+	</form>
+	</body>
+</html>

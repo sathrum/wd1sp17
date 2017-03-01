@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+- Filename:		html5_validation.html
+- Description:	Class Example of HTML5 Form Validation
+- Author:		Luke Sathrum	
+-->
+<html lang="en">
+	<head>
+		<title>HTML5 Form Validation</title>
+		<meta charset="utf-8">
+		<style>
+            body {
+                font-family: "Courier New", courier;   
+            }
+        </style>
+	</head>
+	<body>
+		<form method="get" action="process_form.html">
+			<fieldset id="one">
+				<legend>Contact Information</legend>
+				<!-- Example of disabled autocomplete -->
+				<label for="f-name">First Name: &nbsp;</label>
+				<input type="text" name="f-name" id="f-name" autocomplete="off" /><br />
+				<!-- Example of required -->
+				<label for="l-name">Last Name: &nbsp;&nbsp;</label>
+				<input type="text" name="l-name" id="l-name" required="required" /><br />
+				<!-- Example of pattern (Regular Expression) -->
+				<label for="phone">Phone Number:</label>
+				<input type="text" 
+					   name="phone"
+					   id="phone"
+					   pattern="\d{3}[\-]\d{3}[\-]\d{4}" 
+					   placeholder="999-999-9999"
+					   required="required"
+					   title="The phone number must be in the following format: 999-999-9999"
+				/><br />
+			</fieldset>
+			<input type="submit" value="Place Order" name="submit">
+		</form>
+	</body>
+</html>

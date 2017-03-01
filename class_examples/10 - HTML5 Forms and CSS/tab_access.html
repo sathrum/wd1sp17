@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+- Filename:		tab_access.html
+- Description:	Class Examples of tab-index and access-keys
+- Author:		Luke Sathrum	
+-->
+<html lang="en">
+	<head>
+		<title>Form Example - Tab-Index and Access-Keys</title>
+		<meta charset="utf-8">
+		<style>
+            body {
+                font-family: "Courier New", courier;   
+            }
+			section{
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<form method="get" action="process_form.html">
+			<section id="one">
+				<label for="f-name"><u>F</u>irst Name: </label><input type="text" name="f-name" id="f-name" tabindex="1" autofocus="autofocus" accesskey="F" /><br />
+				<label for="l-name"><u>L</u>ast Name: &nbsp;</label><input type="text" name="l-name" id="l-name" tabindex="3" accesskey="L" />
+			</section>
+			<section id="two">
+				<label for="m-name"><u>M</u>iddle Name:</label><input type="text" name="m-name" id="m-name" tabindex="2" accesskey="M" />
+			</section>
+			<div style="clear: both;"></div>
+			<!-- Here we skip the tabbing of the submit button. No real purpose, just an example -->
+			<input type="submit" value="Submit" name="submit" tabindex="-1">
+		</form>
+	</body>
+</html>

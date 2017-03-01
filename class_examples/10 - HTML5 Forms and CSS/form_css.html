@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<!--
+- Filename:		form_css.html
+- Description:	Class Example of Forms and CSS
+- Author:		Luke Sathrum	
+-->
+<html lang="en">
+	<head>
+		<title>Form Example - Forms and CSS</title>
+		<meta charset="utf-8">
+		<style>
+			#one label{
+				float: left;
+				width: 7em;
+				text-align: right;
+			}
+			#one input{
+				margin-left: 1em;
+				margin-bottom: .5em;
+			}
+			#one input:focus{
+				border: 2px solid #000000;
+			}
+			fieldset {
+				width: 350px;
+				border: 1px solid #000000;
+				border-radius: 10px;
+				padding: 20px;
+				margin-bottom: 20px;
+			}
+			legend {
+				background-color: #EFEFEF;
+				border: 1px solid #DCDCDC;
+				border-radius: 10px;
+				padding: 5px 10px;
+				text-transform: uppercase;
+			}
+			input[type="submit"] {
+				background: #EFEFEF;
+				border: 1px solid #BEBEBE;
+				text-shadow: 0px 1px 1px #FFFFFF;
+				padding: 5px 10px;
+			}
+			input[type="submit"]:hover {
+				background: #000000;
+				color: #FFFFFF;
+				cursor: pointer;
+			}
+			#submit {
+				text-align: right;
+			}
+			input[type="text"]:invalid,
+			input[type="tel"]:invalid {
+				border: 2px solid #FF0000;
+			}
+			input[type="text"]:valid,
+			input[type="tel"]:valid	{
+				border: 2px solid #00FF00;
+			}
+		</style>
+	</head>
+	<body>
+		<form method="get" action="process_form.html">
+			<!-- Example of fieldset -->
+			<fieldset id="one">
+				<legend>Contact Information</legend>
+				<!-- Example of label for attribute, note we added an id to the input element -->
+				<label for="f-name">First Name:</label><input type="text" name="f-name" id="f-name" required="REQUIRED"><br>
+				<label for="l-name">Last Name:</label><input type="text" name="l-name" id="l-name"><br>
+				<label for="phone">Phone Number:</label><input type="tel" 
+					   name="phone"
+					   id="phone"
+					   pattern="\d{3}[\-]\d{3}[\-]\d{4}" 
+					   placeholder="999-999-9999"
+					   required="required"
+					   title="The phone number must be in the following format: 999-999-9999"
+				/><br>
+			</fieldset>
+			
+			<fieldset id="two">
+				<legend>Order</legend>
+				<label>Size:</label><br>
+				<section>
+					<input type="radio" name="size" id="size_10" value="10">
+					<label for="size_10">10"</label>
+					<input type="radio" name="size" id="size_12" value="12">
+					<label for="size_12">12"</label>
+					<input type="radio" name="size" id="size_14" value="14">
+					<label for="size_14">14"</label>
+				</section>
+				<label>Choose Toppings</label><br>
+				<select name="toppings[]" size="4" multiple="multiple">
+					<option value="pepp">Pepperoni</option>
+					<option value="saus">Sausage</option>
+					<option value="mush">Mushrooms</option>
+					<option value="oliv">Olives</option>
+					<option value="onio">Onions</option>
+					<option value="bacn">Bacon</option>
+					<option value="pine">Pineapple</option>
+				</select>
+				<section id="submit">
+					<input type="submit" value="Place Order" name="submit">
+				</section>
+			</fieldset>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+- Filename:		lists_css.html
+- Description:	Class Example of Lists and CSS. Uses leaf_icon.jpg
+- Author:		Luke Sathrum
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>HTML Lists with CSS</title>
+		<style>
+			#one ul {
+				list-style-type: circle;
+			}
+			#two ul {
+				list-style-image: url("leaf_icon.jpg");
+			}
+			#three ol {
+				list-style-type: lower-roman;
+			}
+			li {
+				margin: 10px 0 0;
+			}
+			#inside {
+				list-style-position: inside;
+				width: 100px;
+			}
+			#outside {
+				list-style-position: outside;
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<section id="one">
+			<h2>Grocery List #1</h2>
+			<ul>
+				<li>Coffee</li>
+				<li>Milk</li>
+				<li>Eggs</li>
+				<li>Bread</li>
+			</ul>
+		</section>
+		<section id="two">
+			<h2>Grocery List #2</h2>
+			<ul>
+				<li>Coffee</li>
+				<li>Milk</li>
+				<li>Eggs</li>
+				<li>Bread</li>
+			</ul>
+		</section>
+		<section id="three">
+			<h2>Grocery List #3</h2>
+			<ol>
+				<li>Coffee</li>
+				<li>Milk</li>
+				<li>Eggs</li>
+				<li>Bread</li>
+			</ol>
+		</section>
+		<section>
+			<h2>Inside</h2>
+			<ul id="inside">
+				<li>This is a long sentence that will wrap</li>
+			</ul>
+			<h2>Outside</h2>
+			<ul id="outside">
+				<li>This is a long sentence that will wrap</li>
+			</ul>
+		</section>
+	</body>
+</html>
