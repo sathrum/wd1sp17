@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	mouse_events.html
+- Description: 	Using JavaScript to respond to mouse events
+- Author: 		Luke Sathrum
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Mouse Events</title>
+    <style>
+       section {
+         width: 400px;
+         height: 400px;
+         border: 2px solid #000000;
+         padding: 1em;
+         text-align: center;
+         margin-bottom: 2em;
+         float: left;
+         margin-right: 25px;
+       }
+       .clear {
+         clear: both;
+       }
+    </style>
+</head>
+<body>
+    <h1>Mouse Events</h1>
+	  <section id="double_click">Double Click in this box to fire the <strong>dblclick</strong> event</section>
+    <section id="click">Click to change the color of this box...</section>
+    <div class="clear"></div>
+    <div id="mouseupdown">
+      <section id="mousedown">Will Change color on mouse down</section>
+      <section id="mouseup">Will Change color on mouse up</section>
+    </div>
+    <div class="clear"></div>
+    <section id="mouseoverout">Will be bold on mouse in and italic on mouse out</section>
+    <section id="mousemove"></section>
+    <script src="mouse_events.js"></script>
+</body>
+</html>

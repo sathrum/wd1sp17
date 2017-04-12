@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	  form_events.html
+- Description: 	Using JavaScript to respond to Form events
+- Author: 		  Luke Sathrum
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Form Events</title>
+    <style>
+      form {
+          /* Just to center the form on the page */
+          margin: 0 auto;
+          width: 400px;
+          /* To see the outline of the form */
+          padding: 1em;
+          border: 1px solid #CCC;
+          border-radius: 1em;
+      }
+      form div + div {
+        margin-top: 1em;
+      }
+      label {
+          /* To make sure that all label have the same size and are properly align */
+          display: inline-block;
+          width: 90px;
+          text-align: right;
+      }
+      input[type="text"], textarea {
+          /* To make sure that all text fields have the same font settings
+             By default, textareas have a monospace font */
+          font: 1em sans-serif;
+
+          /* To give the same size to all text field */
+          width: 300px;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+      }
+      textarea {
+          /* To properly align multiline text fields with their labels */
+          vertical-align: top;
+
+          /* To give enough room to type some text */
+          height: 5em;
+
+          /* To allow users to resize any textarea vertically
+             It does not work on every browsers */
+          resize: vertical;
+      }
+      .button {
+          /* To position the buttons to the same position of the text fields */
+          padding-left: 90px; /* same size as the label elements */
+      }
+      button {
+          /* This extra margin represent roughly the same space as the space
+             between the labels and their text fields */
+          margin-left: .5em;
+      }
+      .border {
+        border: 5px solid #000000;
+      }
+      p label {
+        width: 200px;
+      }
+    </style>
+</head>
+<body>
+	  <form id="my_form" action="form_event.html" method="get">
+      <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" class="border" autofocus="AUTOFOCUS"/>
+      </div>
+      <div>
+          <label for="mail">E-mail:</label>
+          <input type="text" class="border" id="mail" />
+      </div>
+      <div>
+          <label for="msg">Message:</label>
+          <textarea id="msg" class="border"></textarea>
+      </div>
+      <fieldset>
+      <legend>Favorite Star Wars Character?</legend>
+        <p><label for="ls"><input type="radio" name="sw" id="ls" value="ls" class="sw"> Luke Skywalker</label></p>
+        <p><label for="hs"><input type="radio" name="sw" id="hs" value="hs" class="sw"> Han Solo</label></p>
+        <p><label for="dv"><input type="radio" name="sw" id="dv" value="dv" class="sw"> Darth Vader</label></p>
+        <p><label for="pl"><input type="radio" name="sw" id="pl" value="pl" class="sw"> Princess Leia</label></p>
+        <p><label for="o"><input type="radio" name="sw" id="o" value="o" class="sw"> Other</label></p>
+        <input type="text" id="sw_o" name="sw_o" style="display: none;" disabled="DISABLED"/>
+    </fieldset>
+      
+      <div class="button">
+        <button type="submit">Send your message</button>
+      </div>
+    </form>
+    <script src="form_events.js"></script>
+</body>
+</html>

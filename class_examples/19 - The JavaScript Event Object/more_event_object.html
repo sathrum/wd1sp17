@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	more_event_object.html
+- Description: 	Learning about the JavaScript Event Object
+- Author: 		Luke Sathrum
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Event Object</title>
+    <style>
+      body {
+        height: 1000px;
+      }
+      
+      div {
+        margin: 1em;
+        padding: 1em;
+        width: 50%;
+        height: 50%;
+        border: 2px dashed #000000;
+      }
+      
+      #stats {
+        background-color: #6cc0ac;
+        color: #ffffff; 
+        position: fixed; 
+        top: 0px; 
+        left: 0px; 
+        padding: 20px; 
+        width: 100%;}
+
+      #stats input[type="text"] {
+        width: 80px;
+        margin: 0px 10px 0px 10px;
+        background-color: #fff;
+        border-color: #fff;}
+
+      #one_a {margin-top: 130px;}
+
+      .divider {
+        margin: 0px 10px; 
+        border-left: 1px solid #fff; 
+        border-right: 1px solid #fff; 
+        color: #6cc0ac;}
+    </style>
+</head>
+<body id="theBody" class="item">
+    <div id="one_a" class="item">
+        <div id="two" class="item">
+            <div id="three_a" class="item">
+                <a href="http://google.com" id="anchorOne">Google</a>
+            </div>
+            <div id="three_b" class="item">
+                <button id="buttonOne" class="item">Click Me!</button>
+            </div>
+        </div>
+    </div>
+    <section id="stats">
+      screenX: <input type="text" id="sx" /> 
+      screenY: <input type="text" id="sy" /><span class="divider">|</span> 
+      pageX: <input type="text" id="px" /> 
+      pageY: <input type="text" id="py" /><span class="divider">|</span>
+      clientX: <input type="text" id="cx" /> 
+      clientY: <input type="text" id="cy" /><span class="divider">|</span> 
+      character <input type="text" id="kc" />
+      asciiKeyCode <input type="text" id="akc" />
+    </section>
+    <script src="more_event_object.js"></script>
+</body>
+</html>

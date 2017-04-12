@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	  ui_events.html
+- Description: 	Using JavaScript to respond to UI events
+- Author: 		  Luke Sathrum
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>UI Events</title>
+    <style>
+       body {
+         height: 10000px;
+       }
+       #scroll {
+         position: fixed;
+         top: 0;
+         right: 0;
+       }
+       #resize {
+         position: fixed;
+         top:0;
+         left: 0;
+       }
+    </style>
+</head>
+<body>
+	  <p id="scroll">Not Scrolling</p>
+    <p id="resize">Not Resizing</p>
+    <script src="ui_events.js"></script>
+    <script>for(var i = 0; i < 300000000; i++) {}</script>
+</body>
+</html>
