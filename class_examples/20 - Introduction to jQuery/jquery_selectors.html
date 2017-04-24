@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	  first_jquery.html
+- Description: 	First code using the jQuery Library
+- Author: 		  Luke Sathrum
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery Selectors</title>
+    <style>
+      body {
+        font: 100% Arial, Verdana, sans-serif;
+      }
+      h2 {
+        font-size: 1.3em;
+        margin-bottom: .5em;
+      }
+      .horizontal {
+        float: left;
+        list-style: none;
+        margin: 10px;
+      }
+      .sub-level {
+        background: #CCCCCC;
+      }
+      a {
+        color: #00C00C;
+      }
+      a.mailto {
+        background: url('email.png') no-repeat right top;
+        padding-right: 18px;
+      }
+      a.pdflink {
+        background: url('pdf.png') no-repeat right top;
+        padding-right: 18px;
+      }
+      .highlight{
+        background-color: #C3EFFD;
+        color: #000000;
+      }
+      #output {
+        margin-top: 2em;
+        font-size: 1.25em;
+        padding: 0.5em;
+        border: 2px dashed #000000;
+        clear: both;
+      }
+      #output p {
+        margin: 0 0 .5em;
+      }
+    </style>
+</head>
+<body>
+    <h2>Selected Shakespeare Plays</h2>
+    <ul id="selected-plays" class="clear-after">
+      <li>Comedies
+        <ul>
+          <li><a href="/asyoulikeit/">As You Like It</a></li>
+          <li>All's Well That Ends Well</li>
+          <li>A Midsummer Night's Dream</li>
+          <li>Twelfth Night</li>
+        </ul>
+      </li>
+      <li>Tragedies
+        <ul>
+          <li><a href="hamlet.pdf">Hamlet</a></li>
+          <li>Macbeth</li>
+          <li>Romeo and Juliet</li>
+        </ul>
+      </li>
+      <li>Histories
+        <ul>
+          <li>Henry IV (<a href="mailto:henryiv@king.co.uk">email</a>)
+            <ul>
+              <li>Part I</li>
+              <li>Part II</li>
+            </ul>
+          </li>
+          <li><a href="http://www.shakespeare.co.uk/henryv.htm">Henry V</a></li>
+          <li>Richard II</li>
+        </ul>
+      </li>
+    </ul>
+    <section id="output"></section>
+    <!-- Including jQuery Library -->
+    <script src="jquery-1.11.1.js"></script>
+    <script src="jquery_selectors.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	  jquery_traversal.html
+- Description: 	Examples of Traversal in jQuery
+- Author: 		  Luke Sathrum
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery Traversal</title>
+    <style>
+      table {
+          float: right;
+          margin-right: 2em;
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          min-width: 60%;
+      }
+      
+      table td:nth-child(1) {
+        width: 30%;
+      }
+
+      table td, table th {
+          font-size: 1em;
+          border: 1px solid #98bf21;
+          padding: 3px 7px 2px 7px;
+      }
+
+      table th {
+          font-size: 1.1em;
+          text-align: left;
+          padding-top: 5px;
+          padding-bottom: 4px;
+          background-color: #A7C942;
+          color: #ffffff;
+      }
+
+      table tr:nth-child(odd) td {
+          color: #000000;
+          background-color: #EAF2D3;
+      }
+    </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Method</th>
+      <th>Result</th>
+    </tr>
+    <tr>
+      <td>this</td>
+      <td id="this"></td>
+    </tr>
+    <tr>
+      <td>.parent()</td>
+      <td id="parent"></td>
+    </tr>
+    <tr>
+      <td>.parents()</td>
+      <td id="parents"></td>
+    </tr>
+    <tr>
+      <td>.children()</td>
+      <td id="children"></td>
+    </tr>
+    <tr>
+      <td>.siblings()</td>
+      <td id="siblings"></td>
+    </tr>
+    <tr>
+      <td>.next()</td>
+      <td id="next"></td>
+    </tr>
+    <tr>
+      <td>.nextAll()</td>
+      <td id="nextAll"></td>
+    </tr>
+    <tr>
+      <td>.prev()</td>
+      <td id="prev"></td>
+    </tr>
+    <tr>
+      <td>.prevAll()</td>
+      <td id="prevAll"></td>
+    </tr>
+  </table>
+  <h1>Fruits</h1>
+  <ul id="fruit">
+    <li>Bananas</li>
+    <li>Apples</li>
+    <li>Oranges</li>
+    <li>Grapefruit</li>
+  </ul>
+  <h1>Vegetables</h1>
+  <ul id="vegetables">
+    <li>Peas</li>
+    <li>Carrots</li>
+    <li>Corn</li>
+  </ul>
+  <h1>Pie</h1>
+  <ul id="pie">
+    <li>Apple</li>
+    <li>Pumpkin</li>
+    <li>Cherry</li>
+    <li>Berry</li>
+  </ul>
+
+  
+  <!-- Including jQuery Library -->
+  <script src="jquery-3.1.1.js"></script>
+  <script src="jquery_traversal.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/*
+* Filename: 	 transitions.html
+* Description: Basic CSS3 Transitions
+* Author:      Luke Sathrum
+*/
+
+div {
+   background-color: tomato;
+   width: 100px;
+   height: 100px;
+   transition: width 5s, height 3s, background-color 1s;
+   /* ease, linear, ease-in, ease-out, ease-in-out */
+   transition-timing-function: linear;
+   transition-delay: 500ms;
+}
+
+div:hover {
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+}

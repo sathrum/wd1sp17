@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Product Discount Calculator</title>
+    <meta charset="utf-8" />
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="skeleton/normalize.css">
+    <link rel="stylesheet" href="skeleton/skeleton.css">
+</head>
+
+<body class="container">
+    <h1>Product Discount Calculator</h1>
+    <form action="display_discount.php" method="post">
+
+        <div class="row">
+            <div class="columns three">
+                <label>Product Description:</label>
+            </div>
+            <div class="columns nine">
+                <input class="u-full-width" type="text" name="product_description">
+            </div>
+        </div>
+        <div class="row">
+            <div class="columns three">
+                <label>List Price:</label>
+            </div>
+            <div class="columns nine">
+                <input class="u-full-width" type="text" name="list_price">
+            </div>
+        </div>
+        <div class="row">
+            <div class="columns three">
+                <label>Discount Percent:</label>
+            </div>
+            <div class="columns eight">
+                <input class="u-full-width" type="text" name="discount_percent">
+            </div>
+            <div class="column one">
+                <span>%</span>
+            </div>
+        </div>
+    
+        <div id="buttons">
+            <input class="button-primary" type="submit" value="Calculate Discount">
+        </div>
+
+    </form>
+</body>
+</html>

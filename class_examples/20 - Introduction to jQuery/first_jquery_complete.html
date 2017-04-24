@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	  first_jquery.html
+- Description: 	First code using the jQuery Library
+- Author: 		  Luke Sathrum
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>First jQuery Page</title>
+    <style>
+      .highlight{
+        background-color: #C3EFFD;
+        color: #000000;
+      }
+    </style>
+</head>
+<body>
+    <ul id="theUL">
+      <li class="list">One</li>
+      <li class="list">Two</li>
+      <li class="list highlight">Three</li>
+      <li class="list">Four</li>
+      <li class="list">Five</li>
+    </ul>
+    <!-- Including jQuery Library -->
+    <script src="jquery-3.1.1.js"></script>
+    <script>
+      alert('Before running jQuery code');
+      $('ul > li:nth-child(odd)').addClass('highlight');
+    </script>
+    <!-- Code if we were just writing JS
+    <script>
+      alert('Before running js code');
+      var lis = document.getElementsByClassName('list');
+      for (var i = 0; i < lis.length; i++) {
+        if (i % 2 == 0) {
+          if (!hasClass(lis[i], 'highlight')) {
+            lis[i].className += ' highlight';
+          }
+        }
+      }
+      function hasClass( elem, cls ) {
+        var reClass = new RegExp(' ' + cls + ' ');
+        return reClass.test(' ' + elem.className + ' ');
+      }
+    </script> -->
+</body>
+</html>

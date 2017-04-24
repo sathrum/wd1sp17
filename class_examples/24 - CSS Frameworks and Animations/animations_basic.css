@@ -1,0 +1,19 @@
+/*
+* Filename: 	 animations_basic.html
+* Description: Basic CSS3 Animations
+* Author:      Luke Sathrum
+*/
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  animation-name: changeColors;
+  animation-duration: 1s;
+  animation-delay: 500ms;
+}
+
+@keyframes changeColors {
+  from { background-color: blue;  }
+  to   { background-color: green; }
+}

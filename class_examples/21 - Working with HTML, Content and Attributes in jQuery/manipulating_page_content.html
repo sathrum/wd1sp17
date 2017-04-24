@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+- Filename: 	  manipulating_page_content.html
+- Description: 	Manipulating page content with jQuery
+- Author: 		  Luke Sathrum
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Manipulating Page Content</title>
+</head>
+<body>
+  <button id="add_index">Add indexes to &lt;li&gt;s</button>
+  <h1>List Items</h1>
+  <button id="prepend">Add &lt;li&gt; to the beginning of the list</button>
+  <button id="append">Add &lt;li&gt; to the end of the list</button>
+  <ul id="original">
+    <li>List Item <b>1</b></li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+    <li><em>List Item</em> 4</li>
+  </ul>
+  <h1>List Updated via .html()</h1>
+  <button id="update_html">Update via .html()</button>
+  <button id="replace_html">Replace via .replaceWith()</button>
+  <ul id="updated_via_html">
+    <li>List Item <b>1</b></li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+    <li><em>List Item</em> 4</li>
+  </ul>
+  <h1>List Updated via .text()</h1>
+  <button id="update_text">Update via .text()</button>
+  <button id="remove_text">Remove via .remove()</button>
+  <ul id="updated_via_text">
+    <li>List Item <b>1</b></li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+    <li><em>List Item</em> 4</li>
+  </ul>
+  <!-- Including jQuery Library -->
+  <script src="jquery-3.1.1.js"></script>
+  <script src="manipulating_page_content.js"></script>
+</body>
+</html>

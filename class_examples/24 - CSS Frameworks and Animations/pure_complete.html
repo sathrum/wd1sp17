@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Product Discount Calculator</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Product Discount Calculator</h1>
+    <form class="pure-form pure-form-aligned" action="display_discount.php" method="post">
+        <fieldset>
+            <section class="pure-control-group">
+                <label>Product Description:</label>
+                <input type="text" name="product_description">
+            </section>
+            
+            <section class="pure-control-group">
+              <label>List Price:</label>
+              <input type="text" name="list_price">
+            </section>
+              
+            <section class="pure-control-group">
+                <label>Discount Percent:</label>
+                <input type="text" name="discount_percent">
+                <span>%</span>
+            </section>
+            
+            <section class="pure-controls">
+                <label>&nbsp;</label>
+                <button type="submit" class="pure-button pure-button-primary">Calculate Discount</button>
+                
+            </section>
+        </fieldset>
+    </form>
+</body>
+</html>

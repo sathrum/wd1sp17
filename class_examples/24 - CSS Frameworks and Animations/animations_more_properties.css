@@ -1,0 +1,30 @@
+/*
+* Filename: 	 animations_more_properties.html
+* Description: CSS3 Animations using More Properties
+* Author:      Luke Sathrum
+*/
+
+div {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  animation-name: move;
+  animation-duration: 6s;
+  /* ease, linear, ease-in, ease-out, ease-in-out */
+  animation-timing-function: linear;
+  /* 1, 2, 3, infinite */
+  animation-iteration-count: infinite;
+  /* normal, reverse, alternate, alternate-reverse */
+  animation-direction: alternate;
+}
+
+@keyframes move {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 200px; top: 0px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
